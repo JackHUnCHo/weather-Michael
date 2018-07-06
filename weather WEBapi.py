@@ -1,0 +1,10 @@
+import pyowm
+owm = pyowm.OWM('6bfdea88e336b11188629e654d5012fa')
+dir(owm)
+see = owm.weather_at_place('Hong Kong')
+dir(see)
+wth = see.get_weather()
+dir(wth)
+jukai = wth.get_humidity()
+print(jukai)
+print("The humudity in Hong Kong, at the moment, is " + str(jukai))
